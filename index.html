@@ -6,6 +6,7 @@
     <title>BrandWeb</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="black nav">
@@ -24,7 +25,13 @@
       </div>
     </nav>
     <header class="black">
-      <div class="container center">
+      <div
+        class="container center"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
+      >
         <img src="images/people.png" alt="people" />
         <div>
           <h2 class="h2">
@@ -45,7 +52,11 @@
     </header>
     <section class="intro">
       <div class="container">
-        <div class="flex padding-160 gutter-row">
+        <div
+          class="flex padding-160 gutter-row"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <div class="gutter">
             <h2 class="h2">Introduction</h2>
             <p class="fs-2">
@@ -71,7 +82,11 @@
     </section>
     <section>
       <div class="container">
-        <div class="center between padding-160">
+        <div
+          class="center between padding-160"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <div>
             <ul class="about-list flex wrap">
               <li>
@@ -107,7 +122,7 @@
     <section class="contact">
       <div class="container">
         <div class="between padding-96">
-          <div class="center">
+          <div class="center" data-aos="fade-right">
             <h2 class="h2">CONTACT ME</h2>
             <img
               src="images/trending_flat_black_24dp 1.png"
@@ -115,7 +130,7 @@
             />
           </div>
 
-          <div class="center icon">
+          <div class="center icon" data-aos="fade-left">
             <a href="#">
               <img src="images/discord.png" alt="discord" />
             </a>
@@ -132,11 +147,25 @@
     <section>
       <div class="container padding-160">
         <div class="projects-header right">
-          <h2 class="h2">My Projects</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-delay="100"
+            data-aos-duration="500"
+            data-aos-anchor-placement="top-bottom"
+            class="h2"
+          >
+            My Projects
+          </h2>
         </div>
         <div class="flex">
           <img
             class="padding-right-24"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-delay="200"
+            data-aos-duration="500"
+            data-aos-anchor-placement="top-bottom"
             src="images/Rectangle 10.png"
             alt="Rectangle2010"
           />
@@ -146,14 +175,27 @@
                 class="padding-right-24"
                 src="images/Rectangle 15.png"
                 alt="Rectangle2015"
+                class="padding-right-24"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-bottom"
               />
-              <div class="flex wrap">
+              <div
+                class="flex wrap"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="50"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <p>
                   I've worked on a variety of websites, including e-commerce
                   sites, blogs, and landing pages. I take pride in creating
                   clean, efficient, and user-friendly code.
                 </p>
-                <div class="margin-top">
+                <div>
                   <a class="btn btn-black" href="#">
                     <div class="center">
                       <p>SEE MORE</p>
@@ -167,8 +209,24 @@
               </div>
             </article>
             <div class="between">
-              <img src="images/Rectangle 14.png" alt="Rectangle2014" />
-              <img src="images/Rectangle 29.png" alt="Rectangle2029" />
+              <img
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="300"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-bottom"
+                src="images/Rectangle 14.png"
+                alt="Rectangle2014"
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="200"
+                data-aos-duration="500"
+                data-aos-anchor-placement="top-bottom"
+                src="images/Rectangle 29.png"
+                alt="Rectangle2029"
+              />
             </div>
           </div>
         </div>
@@ -181,5 +239,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
